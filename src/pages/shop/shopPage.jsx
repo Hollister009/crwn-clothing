@@ -1,8 +1,6 @@
 import React from 'react';
-import './shopPage.scss';
 
 import SHOP_DATA from './shop.data';
-
 import CollectionPreview from '../../components/collectionPreview';
 
 class ShopPage extends React.Component {
@@ -16,7 +14,7 @@ class ShopPage extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="shop-page">
         {this.state.collections.map(
           ({ id, ...otherProps}) => (
             <CollectionPreview key={id} {...otherProps}/>
