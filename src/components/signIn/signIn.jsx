@@ -53,11 +53,12 @@ class SignIn extends React.Component {
             label='Password'
             required
           />
-          <CustomButton type='submit'> Sing In </CustomButton>
-          <CustomButton type='submit' isGoogleSignIn>
-            {' '}
-            Sing In with Google{' '}
-          </CustomButton>
+          <div className='buttons'>
+            <CustomButton type='submit'> Sing In </CustomButton>
+            <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
+              Sing In with Google
+            </CustomButton>
+          </div>
         </form>
       </div>
     );
