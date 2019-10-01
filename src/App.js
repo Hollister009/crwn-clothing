@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import './App.scss';
 
 import Header from './components/header';
-import HomePage from './pages/homepage';
+import HomePage from './pages/home';
 import ShopPage from './pages/shop';
 import LoginPage from './pages/login';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
@@ -22,7 +22,7 @@ class App extends React.Component {
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
-        
+
         userRef.onSnapshot(snapShot => {
           this.setState({
             currentUser: {
@@ -32,7 +32,7 @@ class App extends React.Component {
           });
         });
       } else {
-        this.setState({ currentUser: userAuth })
+        this.setState({ currentUser: userAuth });
       }
     });
   }
