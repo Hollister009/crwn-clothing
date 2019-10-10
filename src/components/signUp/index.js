@@ -1,3 +1,1 @@
-import SignUp from './signUp';
-
-export default SignUp;
+export {default} from './signUp';

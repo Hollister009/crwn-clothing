@@ -1,3 +1,1 @@
-import CollectionPreview from './collectionPreview';
-
-export default CollectionPreview;
+export {default} from './collectionPreview';

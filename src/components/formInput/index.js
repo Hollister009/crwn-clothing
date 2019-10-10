@@ -1,3 +1,1 @@
-import FormInput from './formInput';
-
-export default FormInput;
+export {default} from './formInput';
