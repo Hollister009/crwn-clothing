@@ -10,8 +10,6 @@ import ShopPage from './pages/shop';
 import LoginPage from './pages/login';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions';
-import { dispatch } from '../../../Library/Caches/typescript/3.6/node_modules/rxjs/internal/observable/range';
-
 class App extends React.Component {
   unsubscribeFromAuth = null;
 
