@@ -37,5 +37,8 @@
   },
   "devDependencies": {
     "redux-logger": "^3.0.6"
+  },
+  "resolutions": {
+    "serialize-javascript": "^2.1.1"
   }
 }
