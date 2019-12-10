@@ -10,8 +10,6 @@ import {
 } from './collectionPage.styles';
 
 const CollectionPage = ({ collection }) => {
-  if (!collection) return null;
-
   const { title, items } = collection;
   return (
     <CollectionPageContainer>
