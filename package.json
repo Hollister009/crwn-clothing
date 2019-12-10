@@ -13,7 +13,8 @@
     "react-stripe-checkout": "^2.6.3",
     "redux": "^4.0.4",
     "redux-persist": "^6.0.0",
-    "reselect": "^4.0.0"
+    "reselect": "^4.0.0",
+    "styled-components": "^4.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
