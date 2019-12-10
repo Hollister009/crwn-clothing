@@ -3,7 +3,6 @@ import styled, { css } from 'styled-components';
 const regularButtonStyles = css`
   background-color: black;
   color: white;
-  border: none;
 
   &:hover {
     background-color: white;
@@ -54,6 +53,7 @@ export const CustomButtonBase = styled.button`
   cursor: pointer;
   display: flex;
   justify-content: center;
+  border: none;
 
   ${getButtonStyles}
 `;
