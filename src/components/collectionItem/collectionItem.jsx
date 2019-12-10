@@ -12,7 +12,7 @@ import {
   PriceContainer
 } from './collectionItem.styles';
 
-const CollectionItem = ({ item, addItem }) => {
+const CollectionItem = ({ item, addItem, ...restProps }) => {
   const { name, price, imageUrl } = item;
 
   const clickHandler = () => {
@@ -20,7 +20,7 @@ const CollectionItem = ({ item, addItem }) => {
   };
 
   return (
-    <CollectionItemContainer>
+    <CollectionItemContainer {...restProps}>
       <BackgroundImage className="image" imageUrl={imageUrl} />
       <CollectionFooterContainer>
         <NameContainer>{name}</NameContainer>
