@@ -1,19 +1,15 @@
 import React from 'react';
-import './formInput.scss';
+import { GroupContainer, FormInputContainer, FormInputLabel } from './formInput.styles';
 
 const FormInput = ({ handleChange, label, ...otherProps }) => (
-  <div className='group'>
-    <input className='form-input' onChange={handleChange} {...otherProps} />
+  <GroupContainer>
+    <FormInputContainer onChange={handleChange} {...otherProps} />
     {label ? (
-      <label
-        className={`${
-          otherProps.value && otherProps.value.length ? 'shrink' : ''
-        } form-input-label`}
-      >
+      <FormInputLabel className={otherProps.value.length ? 'shrink' : ''}>
         {label}
-      </label>
+      </FormInputLabel>
     ) : null}
-  </div>
+  </GroupContainer>
 );
 
 export default FormInput;
