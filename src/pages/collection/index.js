@@ -1,3 +1,3 @@
-import CollectionPage from './collectionPage';
+import CollectionPage from './collectionPage.container';
 
 export default CollectionPage;
