@@ -1,1 +1,1 @@
-export {default} from './collectionItem';
+export {default} from './collectionItem.container';

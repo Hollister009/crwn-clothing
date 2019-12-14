@@ -1,8 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 
-import { addItem } from '../../redux/cart/cart.actions';
 import {
   CollectionItemContainer,
   CollectionFooterContainer,
@@ -33,8 +30,4 @@ const CollectionItem = ({ item, addItem, ...restProps }) => {
   );
 };
 
-const mapDispatchToProps = dispatch => ({
-  addItem: bindActionCreators(item => addItem(item), dispatch)
-});
-
-export default connect(null, mapDispatchToProps)(CollectionItem);
+export default CollectionItem;

@@ -1,1 +1,1 @@
-export {default} from './cartDropdown';
+export {default} from './cartDropdown.container';
