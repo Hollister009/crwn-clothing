@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { auth } from '../../firebase/firebase.utils';
 import CartIcon from '../cartIcon';
 import CartDropdown from '../cartDropdown';
 
@@ -12,7 +11,7 @@ import {
   OptionLink
 } from './header.styles';
 
-const Header = ({ currentUser, cartHidden }) => (
+const Header = ({ currentUser, cartHidden, signOutStart }) => (
   <HeaderContainer>
     <LogoContainer to="/">
       <Logo className="logo" />
@@ -21,7 +20,7 @@ const Header = ({ currentUser, cartHidden }) => (
       <OptionLink to="/shop">SHOP</OptionLink>
       <OptionLink to="/shop">CONTACT</OptionLink>
       {currentUser ? (
-        <OptionLink as="div" to="/" onClick={() => auth.signOut()}>
+        <OptionLink as="div" to="/" onClick={signOutStart}>
           SIGN OUT
         </OptionLink>
       ) : (
