@@ -28,7 +28,7 @@ class SignIn extends React.Component {
     const { emailSignInStart } = this.props;
     const { email, password } = this.state;
 
-    emailSignInStart(email, password);
+    emailSignInStart({ email, password });
   };
 
   handleChange = event => {
