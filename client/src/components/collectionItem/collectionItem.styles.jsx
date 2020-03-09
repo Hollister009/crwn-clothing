@@ -19,6 +19,20 @@ export const CollectionItemContainer = styled.div`
       display: flex;
     }
   }
+
+  @media only screen and (max-width: 800px) {
+    width: 40vw;
+
+    .image {
+      opacity: unset;
+      transition: all 200ms;
+    }
+    
+    .active {
+      opacity: 0.8;
+      transform: translateY(10px);
+    }
+  }
 `;
 
 export const AddButton = styled(CustomButton)`

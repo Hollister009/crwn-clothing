@@ -9,11 +9,11 @@ import ShopPage from './pages/shop';
 import LoginPage from './pages/login';
 import CheckoutPage from './pages/checkout';
 
+import { GlobalStyle } from './global.styles';
 import Header from './components/header';
+
 import { selectCurrentUser } from './redux/user/user.selectors';
 import { checkUserSession } from './redux/user/user.actions';
-
-import './App.scss';
 
 const App = ({ currentUser, checkUserSession }) => {
   React.useEffect(() => {
@@ -22,6 +22,7 @@ const App = ({ currentUser, checkUserSession }) => {
 
   return (
     <main className="main">
+      <GlobalStyle />
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
